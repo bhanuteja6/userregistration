@@ -6,7 +6,7 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @registrations }
+      format.xls 
     end
   end
 
@@ -17,7 +17,8 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @registration }
+              
+      format.xls 
     end
   end
 
